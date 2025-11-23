@@ -14,7 +14,7 @@ A modern, responsive and interactive world‑clock application built with **HTML
 ## Demo Preview
 
 <div style="text-align: center;">
-  <img src="assets/demo.gif" alt="Chronos Demo">
+  <img src="assets/images/demo.gif" alt="Chronos Demo">
 </div>
 
 ## Live Demo
@@ -91,4 +91,5 @@ This project is open source and available under the [MIT License](LICENSE).
 ---
 
 **⭐ Star this repository if you find Chronos useful !**
+
 
