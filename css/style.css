@@ -111,6 +111,32 @@ body {
   gap: 10px;
 }
 
+/* Header Tabs */
+.header-tabs {
+  display: flex;
+  background: var(--card-bg);
+  backdrop-filter: blur(20px);
+  border-radius: 16px;
+  padding: 8px;
+  border: 1px solid var(--card-border);
+  margin: 0 2rem;
+}
+
+.tab {
+  padding: 14px 32px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.tab.active {
+  background: var(--accent);
+  color: white;
+  box-shadow: 0 8px 25px var(--accent-glow);
+}
+
 /* Main Content */
 .main-content {
   margin-top: 100px;
@@ -118,6 +144,26 @@ body {
   max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* Pages */
+.page {
+  display: none;
+  animation: fadeIn 0.6s ease;
+}
+.page.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Clock Card */
@@ -225,6 +271,73 @@ select:hover {
   box-shadow: 0 10px 30px var(--accent-glow);
 }
 
+/* Stopwatch */
+.stopwatch-display {
+  font-size: 6rem;
+  font-weight: 800;
+  letter-spacing: -2px;
+  color: var(--accent);
+  text-shadow: 0 0 30px var(--accent-glow);
+}
+
+.stopwatch-controls {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 2.5rem 0;
+}
+
+.stopwatch-btn {
+  padding: 16px 32px;
+  border-radius: 50px;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+  min-width: 140px;
+  justify-content: center;
+}
+
+.start {
+  background: var(--success);
+  color: #000;
+}
+.pause {
+  background: var(--warning);
+  color: #000;
+}
+.reset {
+  background: var(--danger);
+}
+.lap {
+  background: var(--accent);
+}
+
+.stopwatch-btn:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.laps-container {
+  max-height: 300px;
+  overflow-y: auto;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  padding: 1rem;
+}
+
+.lap-item {
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: space-between;
+  font-family: "Courier New", monospace;
+}
+
 /* Footer */
 .footer {
   text-align: center;
@@ -244,7 +357,19 @@ select:hover {
   .logo {
     font-size: 1.5rem;
   }
+  .header-tabs {
+    margin: 0 1rem;
+  }
+  .tab {
+    padding: 12px 20px;
+  }
   .clock-card {
     padding: 2rem;
+  }
+  .stopwatch-display {
+    font-size: 4rem;
+  }
+  .stopwatch-controls {
+    flex-wrap: wrap;
   }
 }
