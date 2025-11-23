@@ -18,6 +18,13 @@
                 <i class="fas fa-clock"></i>
                 <span>Chronos</span>
             </div>
+
+            <!-- Tabs in Header -->
+            <div class="header-tabs">
+                <div class="tab active" data-tab="clock">World Clock</div>
+                <div class="tab" data-tab="stopwatch">Stopwatch</div>
+            </div>
+
             <div class="button-group">
                 <button class="circle-button theme-toggle"id="fullscreenBtn"><i class="fas fa-expand"></i> </button>
                 <button class="circle-button theme-toggle" id="themeToggle"> <i class="fas fa-moon"></i> </button>
@@ -29,31 +36,59 @@
     <!-- Main Content -->
     <main class="main-content">
         <!-- Clock Page -->
-        <div class="clock-card">
-            <div id="time">12:34:56 AM</div>
-            <div id="date">Monday, January 1, 2024</div>
+        <div class="page active" id="clock-page">
+            <div class="clock-card">
+                <div id="time">12:34:56 AM</div>
+                <div id="date">Monday, January 1, 2024</div>
 
-            <div class="controls-grid">
-                <div class="control-item">
-                    <label>Timezone</label>
-                    <select id="timezone">
-                        <option value="local">Local Time</option>
-                        <option value="utc">UTC</option>
-                        <option value="est">New York (EST)</option>
-                        <option value="pst">Los Angeles (PST)</option>
-                        <option value="london">London (GMT)</option>
-                        <option value="tokyo">Tokyo (JST)</option>
-                    </select>
-                </div>
-                <div class="control-item">
-                    <label>Format</label>
-                    <select id="format">
-                        <option value="12">12-hour</option>
-                        <option value="24">24-hour</option>
-                    </select>
+                <div class="controls-grid">
+                    <div class="control-item">
+                        <label>Timezone</label>
+                        <select id="timezone">
+                            <option value="local">Local Time</option>
+                            <option value="utc">UTC</option>
+                            <option value="est">New York (EST)</option>
+                            <option value="pst">Los Angeles (PST)</option>
+                            <option value="london">London (GMT)</option>
+                            <option value="tokyo">Tokyo (JST)</option>
+                        </select>
+                    </div>
+                    <div class="control-item">
+                        <label>Format</label>
+                        <select id="format">
+                            <option value="12">12-hour</option>
+                            <option value="24">24-hour</option>
+                        </select>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <!-- Stopwatch Page -->
+        <div class="page" id="stopwatch-page">
+            <div class="clock-card">
+                <div class="stopwatch-display" id="stopwatchDisplay">00:00:00.00</div>
+                
+                <div class="stopwatch-controls">
+                   
+                    <button class="stopwatch-btn start" id="startBtn">
+                        <i class="fas fa-play"></i> Start
+                    </button>
+                    <button class="stopwatch-btn pause" id="pauseBtn">
+                        <i class="fas fa-pause"></i> Pause
+                    </button>
+                    <button class="stopwatch-btn reset" id="resetBtn">
+                        <i class="fas fa-redo"></i> Reset
+                    </button>
+                    <button class="stopwatch-btn lap" id="lapBtn">
+                        <i class="fas fa-flag"></i> Lap
+                    </button>
+                </div>
+
+                <div class="laps-container" id="lapsContainer"></div>
+            </div>
+        </div>
+        
     </main>
 
     <footer class="footer">
