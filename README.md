@@ -7,15 +7,16 @@
 ![Status](https://img.shields.io/badge/Project-Active-blue)
 
 
-A modern, responsive and interactive world‑clock application built with **HTML**, **CSS**, and **JavaScript** — featuring multiple timezones, 12/24‑hour format switching, and light/dark theme transitions.
+A modern, responsive and interactive world‑clock application built with **HTML**, **CSS**, and **JavaScript** — featuring multiple timezones, 12/24‑hour format switching, light/dark theme transitions and a stopwatch with lap tracking.
 
 ---
 
 ## Demo Preview
 
 <div style="text-align: center;">
-  <img src="assets/images/demo.gif" alt="Chronos Demo">
+  <img src="assets/images/demo_v2.gif" alt="Chronos Demo">
 </div>
+
 
 ## Live Demo
 You can check out Chronos in action : [Chronos Live Demo](https://oussamale.github.io/chronos-world-clock/).
@@ -24,12 +25,19 @@ You can check out Chronos in action : [Chronos Live Demo](https://oussamale.gith
 
 ## Features
 
-- Real‑time digital clock
-- Timezone selection (Local, UTC, EST, PST, London, Tokyo)
-- 12h / 24h format toggle
-- Light/Dark theme switcher
-- Fullscreen mode
-- Responsive UI and animations
+### World Clock
+- **Real-time updates** every second
+- **6 timezones** covering major global cities (Local, UTC, EST, PST, London, Tokyo)
+- **12/24-hour format** toggle
+- **Date display** with full formatting
+- **Automatic timezone conversion**
+
+### Stopwatch
+- **High precision timing** (00:00:00.00 format with hundredths of a second)
+- **Start/Pause/Reset/Lap** controls
+- **Lap tracking** with numbered history and scrollable container
+- **Professional sports-style timing** interface
+- **Real-time updates** every 10ms for accuracy
 
 ---
 
@@ -46,7 +54,8 @@ chronos-world-clock/
 │   └── app.js
 └── assets/
     └── images/ 
-        └── demo.gif
+        ├── demo_v1.gif
+        └── demo_v2.gif
 ```
 
 ---
@@ -91,5 +100,3 @@ This project is open source and available under the [MIT License](LICENSE).
 ---
 
 **⭐ Star this repository if you find Chronos useful !**
-
-
