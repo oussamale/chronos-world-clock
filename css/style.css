@@ -223,7 +223,8 @@ label {
 }
 
 select,
-button {
+button,
+input {
   width: 100%;
   padding: 14px 18px;
   border-radius: 12px;
@@ -336,6 +337,100 @@ select:hover {
   display: flex;
   justify-content: space-between;
   font-family: "Courier New", monospace;
+}
+
+/* Countdown Styles */
+.countdown-display {
+  font-size: 6rem;
+  font-weight: 800;
+  letter-spacing: -2px;
+  color: var(--accent);
+  text-shadow: 0 0 30px var(--accent-glow);
+  margin-bottom: 2rem;
+}
+
+.countdown-inputs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.countdown-input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.countdown-input-group label {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.countdown-input-group input {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.countdown-controls {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 2.5rem 0;
+}
+
+.countdown-btn {
+  padding: 16px 32px;
+  border-radius: 50px;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+  min-width: 140px;
+  justify-content: center;
+}
+
+.countdown-start {
+  background: var(--success);
+  color: #000;
+}
+.countdown-pause {
+  background: var(--warning);
+  color: #000;
+}
+.countdown-reset {
+  background: var(--danger);
+}
+
+.countdown-btn:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.countdown-alert {
+  background: var(--danger);
+  color: white;
+  padding: 1rem;
+  border-radius: 12px;
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: 600;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 /* Footer */
