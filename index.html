@@ -23,6 +23,7 @@
             <div class="header-tabs">
                 <div class="tab active" data-tab="clock">World Clock</div>
                 <div class="tab" data-tab="stopwatch">Stopwatch</div>
+                <div class="tab" data-tab="countdown">Countdown</div>
             </div>
 
             <div class="button-group">
@@ -86,6 +87,45 @@
                 </div>
 
                 <div class="laps-container" id="lapsContainer"></div>
+            </div>
+        </div>
+        
+        <!-- Countdown Page -->
+        <div class="page" id="countdown-page">
+            <div class="clock-card">
+                <div id="countdownAlert" class="countdown-alert" style="display: none;">
+                    <i class="fas fa-bell"></i> Time's up!
+                </div>
+                <div class="countdown-display" id="countdownDisplay">00:00:00</div>
+                
+                <div class="countdown-inputs">
+                    <div class="countdown-input-group">
+                        <label>Hours</label>
+                        <input type="number" id="hoursInput" min="0" max="99" value="0">
+                    </div>
+                    <div class="countdown-input-group">
+                        <label>Minutes</label>
+                        <input type="number" id="minutesInput" min="0" max="59" value="0">
+                    </div>
+                    <div class="countdown-input-group">
+                        <label>Seconds</label>
+                        <input type="number" id="secondsInput" min="0" max="59" value="0">
+                    </div>
+                </div>
+                
+                <div class="countdown-controls">
+                    <button class="countdown-btn countdown-start" id="countdownStartBtn">
+                        <i class="fas fa-play"></i> Start
+                    </button>
+                    <button class="countdown-btn countdown-pause" id="countdownPauseBtn">
+                        <i class="fas fa-pause"></i> Pause
+                    </button>
+                    <button class="countdown-btn countdown-reset" id="countdownResetBtn">
+                        <i class="fas fa-redo"></i> Reset
+                    </button>
+                </div>
+                
+                
             </div>
         </div>
         
