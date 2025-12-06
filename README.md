@@ -7,15 +7,35 @@
 ![Status](https://img.shields.io/badge/Project-Active-blue)
 
 
-A modern, responsive and interactive world‑clock application built with **HTML**, **CSS**, and **JavaScript** — featuring multiple timezones, 12/24‑hour format switching, light/dark theme transitions and a stopwatch with lap tracking.
+A modern, responsive and interactive world‑clock application built with **HTML**, **CSS**, and **JavaScript** — featuring multiple timezones, 12/24‑hour format switching, light/dark theme transitions, a stopwatch with lap tracking and a countdown timer with visual alerts.
 
 ---
 
 ## Demo Preview
 
-<div style="text-align: center;">
-  <img src="assets/images/demo_v2.gif" alt="Chronos Demo">
+### Version 3 (Current)
+
+<div align="center">
+  <img src="assets/images/demo_v3.gif" alt="Chronos Demo">
 </div>
+
+---
+
+## Previous Versions
+
+<details>
+  <summary><strong>Version 1</strong></summary>
+  <div align="center">
+    <img src="assets/images/demo_v1.gif">
+  </div>
+</details>
+
+<details>
+  <summary><strong>Version 2</strong></summary>
+  <div align="center">
+    <img src="assets/images/demo_v2.gif">
+  </div>
+</details>
 
 
 ## Live Demo
@@ -39,6 +59,16 @@ You can check out Chronos in action : [Chronos Live Demo](https://oussamale.gith
 - **Professional sports-style timing** interface
 - **Real-time updates** every 10ms for accuracy
 
+### Countdown Timer
+- **Flexible time input** (hours, minutes, seconds)
+- **Start/Pause/Reset** functionality
+- **Visual time alerts** with color changes:
+  - **Blue**: Normal time
+  - **Yellow**: Last 30 seconds
+  - **Red**: Last 10 seconds
+- **Pulsing alert animation** when timer completes
+- **Real-time preview** of set time
+  
 ---
 
 ## Project Structure
@@ -55,7 +85,8 @@ chronos-world-clock/
 └── assets/
     └── images/ 
         ├── demo_v1.gif
-        └── demo_v2.gif
+        ├── demo_v2.gif
+        └── demo_v3.gif
 ```
 
 ---
@@ -100,3 +131,4 @@ This project is open source and available under the [MIT License](LICENSE).
 ---
 
 **⭐ Star this repository if you find Chronos useful !**
+
